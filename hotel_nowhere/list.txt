@@ -1,0 +1,47 @@
+<main>
+      <div class="sidenav">
+        <div>
+          <a class="side-links" href="areas.html#suits">Lakosztályok</a>
+        </div>
+        <div><a class="side-links" href="areas.html#rooms">Szobák</a></div>
+        <div><a class="side-links" href="areas.html#restaurs">Éttermek</a></div>
+      </div>
+      <div class="booking-input">
+        <div class="booking-h1"><h1>Hotel Nowhere</h1></div>
+
+        <label for="indate"> Érkezés </label
+        ><input class="form-control checkin" type="date" id="indate" />
+        <label for="outdate"> Távozás </label>
+        <input class="form-control checkout" type="date" id="outdate" />
+
+        <label for="name">Név</label>
+        <input
+          type="text"
+          class="form-control"
+          id="name"
+          placeholder="Írja be a teljes nevét"
+        />
+
+        <label for="email">E-mail cím</label>
+        <input
+          type="email"
+          class="form-control"
+          id="email"
+          placeholder="Írja be az e-mail címét"
+        />
+
+        <div class="radio-input">
+          <label for="room"
+            ><input type="radio" name="room-suit" id="room" />Szoba</label
+          >
+
+          <label for="suit"
+            ><input type="radio" name="room-suit" id="suit" />Lakosztály</label
+          >
+        </div>
+
+        <div class="btn-div">
+          <input class="submit-btn" type="submit" value="Foglalás küldése" />
+        </div>
+      </div>
+    </main>

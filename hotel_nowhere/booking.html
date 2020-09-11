@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="hu" >
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hotel Nowhere</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body  class="dark">
+      <header>
+          <nav>
+            <a href="index.html"><img class="logo" src="img/logo.svg" alt="logo" /></a>
+            <input type="checkbox" name="hamburger_menu" id="menu_toggle" />
+            <label for="menu_toggle" class="hamburger_btn">
+              <span class="hamburger_lines"></span>
+            </label>
+            <ul class="menu_box">
+              <li class="menu_item dropdown">
+                 <div onclick="myFunction()" class="dropbtn">Hotel</div>
+                  <div id="myDropdown" class="dropdown-content">
+                    <a class="dropdown-links" href="areas.html#suite">Lakosztályok</a>
+                    <a class="dropdown-links" href="areas.html#rooms">Szobák</a>
+                    <a class="dropdown-links" href="areas.html#restaurs">Éttermek</a>
+               
+              </li>
+              <li class="menu_item"><a class="menu_link" href="galery.html">Galéria</a></li>
+              <li class="menu_item">
+                <a class="menu_link" href="contact.html">Kapcsolat</a>
+              </li>
+              <li class="menu_item"><a class="menu_link" href="booking.html">Foglalás</a></li>
+            </ul>
+
+            
+            
+          </header>
+              <div class="light_dark_switch">
+                <input type="checkbox" class="checkbox jsDark" id="checkbox">
+                <label for="checkbox" class="label" >
+                  <div class="moon"><img src="img/moon.svg" class="switch_img" ></div>
+                  <div class="sun" ><img src="img/sun.svg" class="switch_img" ></div>
+                  <div class="ball"></div>
+                </label>
+              </div>
+        <div class="banner-div"></div>
+    <main>
+      <h1>Foglalás</h1>
+
+      <form  class="form-control" action="https://formspree.io/myynnvep"
+      method="POST" target="_blank"> 
+
+      <label for="indate" class="checkin_label"> Érkezés </label
+        ><input class=" checkin" type="date" id="indate" class="checkin" required />
+        <label for="outdate" class="checkout_label"> Távozás </label>
+        <input class="checkout" type="date" id="outdate" class="checkout" required />
+          <label for="name" class="name_label">Név</label>
+           <input type="text" name="name" id="name" placeholder="Név" class="name" required  >
+           <label for="email" class="email_label">E-mail cím </label>
+           <input type="email" name="email" id="email" placeholder="E-mail cím" class="email"required>
+           <label for="room" class="room_radio_label">Szoba</label>
+           <input type="radio" name="room-suit" id="room" class="room_radio" />
+         
+
+         <label for="suit" class="suite_radio_label">Lakosztály</label>
+         <input type="radio" name="room-suit" id="suit" class="suite_radio" />
+          
+           <button class="submit-btn"type="submit">Küldés</button>
+     </form> 
+
+      
+        
+      </main>
+      <footer>
+        <img class="decor_line" src="img/h1decor.svg" alt="Dekor">
+        <ul class="social-bar">
+            <li class="social-link"><a href="#"> <img class="social-logo__link" src="img/facebook.png" alt="facebook-logo"></a></li>
+            <li class="social-link"><a href="#"><img class="social-logo__link" src="img/book.png" alt="booking-logo"></a></li>
+            <li class="social-link"><a href="#"><img class="social-logo__link" src="img/twitter.png" alt="twitter-logo"></a></li>  
+    
+          </ul>
+
+      Attila Fedor &copy; 2020
+    </footer>
+ <script src="script.js"></script>
+ <script src="toogle.js"></script>
+  </body>
+</html>

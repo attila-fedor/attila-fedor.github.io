@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="hu">
+  <head>
+    <meta charset="UTF-11" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hotel Nowhere</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body  class="dark">
+      <header>
+          <nav>
+            <a href="index.html"><img class="logo" src="img/logo.svg" alt="logo" /></a>
+            <input type="checkbox" name="hamburger_menu" id="menu_toggle" />
+            <label for="menu_toggle" class="hamburger_btn">
+              <span class="hamburger_lines"></span>
+            </label>
+            <ul class="menu_box">
+              <li class="menu_item dropdown">
+                 <div onclick="myFunction()" class="dropbtn">Hotel</div>
+                  <div id="myDropdown" class="dropdown-content">
+                    <a class="dropdown-links" href="areas.html#suite">Lakosztályok</a>
+                    <a class="dropdown-links" href="areas.html#rooms">Szobák</a>
+                    <a class="dropdown-links" href="areas.html#restaurs">Éttermek</a>
+               
+              </li>
+              <li class="menu_item"><a class="menu_link" href="galery.html">Galéria</a></li>
+              <li class="menu_item">
+                <a class="menu_link" href="contact.html">Kapcsolat</a>
+              </li>
+              <li class="menu_item"><a class="menu_link" href="booking.html">Foglalás</a></li>
+            </ul>
+
+            
+            
+          </header>
+              <div class="light_dark_switch">
+                <input type="checkbox" class="checkbox jsDark" id="checkbox">
+                <label for="checkbox" class="label" >
+                  <div class="moon"><img src="img/moon.svg" class="switch_img" ></div>
+                  <div class="sun" ><img src="img/sun.svg" class="switch_img" ></div>
+                  <div class="ball"></div>
+                </label>
+              </div>
+    <div class="banner-div"></div>
+
+    
+   <div class="h1-div">
+     <h1>Galéria</h1>
+   </div>
+
+      
+      <main>
+        
+
+      <div class="slideshow-container">
+
+   
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 9</div>
+          <img src="img/hotelhall.jpg" style="width:100%">
+          <div class="text">Hotel hall</div>
+        </div>
+      
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 9</div>
+          <img src="img/room2.jpg" style="width:100%">
+          <div class="text">Skadináv szoba</div>
+        </div>
+      
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 9</div>
+          <img src="img/luxsuite.jpg" style="width:100%">
+          <div class="text">Luxus Lakosztály</div>
+        </div>
+        <div class="mySlides fade">
+          <div class="numbertext">4 / 9</div>
+          <img src="img/room3.jpg" style="width:100%">
+          <div class="text">Superior Szoba</div>
+        </div>
+        <div class="mySlides fade">
+          <div class="numbertext">5 / 9</div>
+          <img src="img/suite2.jpg" style="width:100%">
+          <div class="text">Lakosztály</div>
+        </div>
+        <div class="mySlides fade">
+          <div class="numbertext">6 / 9</div>
+          <img src="img/suite1.jpg" style="width:100%">
+          <div class="text">Superior Lakosztály</div>
+        </div>
+        <div class="mySlides fade">
+          <div class="numbertext">7 / 9</div>
+          <img src="img/odin.png" style="width:100%">
+          <div class="text">Odin étterem</div>
+        </div>
+        <div class="mySlides fade">
+          <div class="numbertext">8 / 9</div>
+          <img src="img/thor.jpg" style="width:100%">
+          <div class="text">Thor étterem</div>
+        </div>
+        <div class="mySlides fade">
+          <div class="numbertext">9 / 9</div>
+          <img src="img/bar.jpg" style="width:100%">
+          <div class="text">Loki Bár</div>
+        </div>
+        
+      
+      
+      
+       
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+      
+    
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+        <span class="dot" onclick="currentSlide(6)"></span>
+        <span class="dot" onclick="currentSlide(7)"></span>
+        <span class="dot" onclick="currentSlide(8)"></span>
+        <span class="dot" onclick="currentSlide(9)"></span>
+       
+      </div>
+  
+    </main>
+    <footer>
+      <img class="decor_line" src="img/h1decor.svg" alt="Dekor">
+      <ul class="social-bar">
+          <li class="social-link"><a href="#"> <img class="social-logo__link" src="img/facebook.png" alt="facebook-logo"></a></li>
+          <li class="social-link"><a href="#"><img class="social-logo__link" src="img/book.png" alt="booking-logo"></a></li>
+          <li class="social-link"><a href="#"><img class="social-logo__link" src="img/twitter.png" alt="twitter-logo"></a></li>  
+  
+        </ul>
+
+    Attila Fedor &copy; 2020
+  </footer>
+<script src="script.js"></script>
+<script src="toogle.js"></script>
+  </body>
+</html>

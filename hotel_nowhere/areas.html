@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hotel Nowhere</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body  class="dark">
+  <header>
+    <nav>
+      <a href="index.html"><img class="logo" src="img/logo.svg" alt="logo" /></a>
+      <input type="checkbox" name="hamburger_menu" id="menu_toggle" />
+      <label for="menu_toggle" class="hamburger_btn">
+        <span class="hamburger_lines"></span>
+      </label>
+      <ul class="menu_box">
+        <li class="menu_item dropdown">
+          <div onclick="myFunction()" class="dropbtn">Hotel</div>
+          <div id="myDropdown" class="dropdown-content">
+            <a class="dropdown-links" href="areas.html#suite">Lakosztályok</a>
+            <a class="dropdown-links" href="areas.html#rooms">Szobák</a>
+            <a class="dropdown-links" href="areas.html#restaurs">Éttermek</a>
+
+        </li>
+        <li class="menu_item"><a class="menu_link" href="galery.html">Galéria</a></li>
+        <li class="menu_item">
+          <a class="menu_link" href="contact.html">Kapcsolat</a>
+        </li>
+        <li class="menu_item"><a class="menu_link" href="booking.html">Foglalás</a></li>
+      </ul>
+
+      
+    </header>
+        <div class="light_dark_switch">
+          <input type="checkbox" class="checkbox jsDark" id="checkbox">
+          <label for="checkbox" class="label" >
+            <div class="moon"><img src="img/moon.svg" class="switch_img" ></div>
+            <div class="sun" ><img src="img/sun.svg" class="switch_img" ></div>
+            <div class="ball"></div>
+          </label>
+        </div>
+  <div class="banner-div"></div>
+  <main>
+    <article class="areas-article">
+      <section id="suite">
+        
+        <h2>Luxus Lakosztály</h2>
+
+        <img src="img/luxsuite.jpg" alt="suite"  class="g_item1"/>
+        <p class="g_item2">
+          A lakosztály a Kebnekaise déli csúcsának legszebb részére lát rá. Az üvegpanorámán keresztül érezhetjük a hegy
+          közelségét, gyönyörködhetünk a igéző látványabáan, a luxus kandalló által felmelegített lakosztályunkból.
+
+        </p>
+        <img class="decor_line" src="img/h1decor.svg" alt="Dekor">
+      </section>
+      <section>
+        
+        <h2>Superior Lakosztály</h2>
+
+        <img src="img/suite1.jpg" alt="suite" class="g_item3"/>
+        <p class="g_item4">
+          Helagsfjället lejtői festői képet adnak minden évszakban. A hatalmas üvegfelületeken keresztül mesés kilátás
+          nyílik, minden napszakban.
+        </p>
+        <img class="decor_line" src="img/h1decor.svg" alt="Dekor">
+      </section>
+      <section>
+       
+        <h2>Lakosztály</h2>
+        <img src="img/suite2.jpg" alt="suite" class="g_item5" />
+        <p class="g_item6">
+          Beépített pezsgőfürdő és a Oksskolten csúcsra néző lakosztály várja a romantikázni és pihenni vágyó párokat.
+          A lakosztály 57 m<sup>2</sup> teljes területe a pihenést és kényelmet szolgálja.
+        </p>
+        <img class="decor_line" src="img/h1decor.svg" alt="Dekor">
+      </section>
+      <section id="rooms">
+        
+        <h2>Szoba</h2>
+        <img src="img/room1.jpg" alt="suite" class="g_item7" />
+        <p class="g_item8">
+          Troms megyére néző Skandináv stílusú szoba a kényelem jegyében lett kialakítva.
+          Üzleti útra megfelelő választás lehet. A szoba dolgozórészzel és tárgyalásra alkalmas előtérrel van ellátva.
+          Minden üzletember és üzletasszony álma lehet.
+        </p>
+        <img class="decor_line" src="img/h1decor.svg" alt="Dekor">
+      </section>
+      <section>
+     
+        <h2>Superior Szoba</h2>
+        <img src="img/room3.jpg" alt="suite" class="g_item9" />
+        <p class="g_item10">
+          Jiehkkevárri csúra és Lyngenre néző Superior szoba , közvetlenül a hegy lábánál.
+          Minden természetjáró és hegymászó és festőművész álma. A korai órákban a hegy lejtőin megcsillanó nap fénye
+          csodásan rajzolja meg a gleccserek vonulatait.
+          Minden sugár aranyló folyóként ömlik végig a hegy lábáig.
+        </p>
+        <img class="decor_line" src="img/h1decor.svg" alt="Dekor">
+      </section>
+      <section>
+        
+        <h2>Skandináv Szoba</h2>
+        <img src="img/room2.jpg" alt="suite"  class="g_item11"/>
+        <p class="g_item12">
+          Ízig-vérig a Skandináv stílus tölti be a szobát. Letisztult , konfortos szoba kiváló választás azoknak akik,
+          rajonganak a Skandináv életérzésért. A berendezés nayg része a Fjordok lábánál található fák felldolgozásából
+          származik. Magában hordozza a Fjordok energiáját.
+        </p>
+        <img class="decor_line" src="img/h1decor.svg" alt="Dekor">
+      </section>
+      <section id="restaurs">
+       
+        <h2>Odin étterem</h2>
+        <img src="img/odin.png" alt="suite" class="g_item13" />
+        <p class="g_item14">
+          Odin a skandináv és germán mitológia legfontosabb istene és a panteon legidősebb, leghatalmasabb, legbölcsebb
+          tagja.
+          Nevével fémjelzett éttermünkben isteni bánásmódban és kiszolgálásban lehet része.A tradicionális Skandináv
+          ételeket és italokat kóstolhat meg.
+        </p>
+        <img class="decor_line" src="img/h1decor.svg" alt="Dekor">
+      </section>
+      <section>
+        
+        <h2>Thor étterem</h2>
+        <img src="img/thor.jpg" alt="suite" class="g_item15" />
+        <p class="g_item16">
+         Odin fia  Thor a skandináv és germán mitológia egyik legfontosabb alakja, a mennydörgés, a vihar, villámok és a termékenység istene.
+         Éttermünk aézrt kapta ezt a nevet, mert a Skandináv vidék gazdag étel és italválasztéka itt öszpontosul egy igazán modern formában.
+         
+        </p><img class="decor_line" src="img/h1decor.svg" alt="Dekor">
+      </section>
+      <section>
+        
+        <h2>Loki Bár</h2>
+        <img src="img/bar.jpg" alt="suite" class="g_item17" />
+        <p class="g_item18">
+         Odin másik fia Loki, (vagy Loke, vitatott jelentése: „befejező”) a skandináv mitológia alakja, germán tűzisten, tréfacsináló. A tréfa istenéről elnevezett bárunkban, rengeteg Skandináv italt és egyéb fonomságokat fogyaszthat.
+         Garantáltan jó szórakozást biztosít a bárban fellépő  megannyi zenész és humorista. 
+
+        </p>
+      </section>
+    </article>
+  </main>
+  <footer>
+    <img class="decor_line" src="img/h1decor.svg" alt="Dekor">
+    <ul class="social-bar">
+      <li class="social-link"><a href="#"> <img class="social-logo__link" src="img/facebook.png"
+            alt="facebook-logo"></a></li>
+      <li class="social-link"><a href="#"><img class="social-logo__link" src="img/book.png" alt="booking-logo"></a></li>
+      <li class="social-link"><a href="#"><img class="social-logo__link" src="img/twitter.png" alt="twitter-logo"></a>
+      </li>
+
+    </ul>
+
+    Attila Fedor &copy; 2020
+  </footer>
+  <script src="script.js"></script>
+  <script src="toogle.js"></script>
+</body>
+
+</html>
