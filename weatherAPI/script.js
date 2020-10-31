@@ -49,4 +49,3 @@ document.querySelector("form").addEventListener("submit", (event) => {
 
     });
 });
-/*<div>${JSON.stringify(adatok)}</div>*/
