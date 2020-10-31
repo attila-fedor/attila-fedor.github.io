@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Rimouski";
+    letter-spacing: 1px;
+}
+
+body {
+    background-color: #06525f;
+    text-align: center;
+}
+
+img {
+    width: 8rem;
+}
+
+.all_contaiener {
+    display: grid;
+    grid-template-areas: "aktualis" "form" "keresett";
+    
+}
+
+form {
+    grid-area: form;
+    margin:0px auto;
+   
+   
+    
+}
+
+input,.btn{
+    padding: 5px 5px;
+    border-radius: 5px;
+}
+
+.c_w_container {
+    grid-area: aktualis;
+    
+    width: 220px;
+    
+    ;
+    
+    display: block;
+    margin: 20px auto;
+    
+    padding-bottom: 50px;
+    
+}
+
+.s_w_container {
+    grid-area: keresett;
+    width: 220px;
+    
+    
+    display: block;
+    margin: 10px auto;
+    
+    padding-bottom: 50px;
+    
+}
+
+div p {
+    padding: 0.7em;
+}
+
+.desc {
+    text-transform: uppercase;
+}
+
+.notification, .s_notification {
+    background-color: #d7eef8;
+    display: none;
+}
+
+.app-title, .s_app-title {
+    width: 220px;
+    height: 30px;
+    
+        
+}
+
+.app-title p, .s_app-title p {
+    text-align: center;
+    
+    margin: 0 auto;
+    font-size: 1em;
+    color:whitesmoke;
+}
+
+.weather-container, .s_weather-container {
+    width: 200px;
+    
+    background-color: #ffffffe5;
+    border-radius: 10px;
+    border: 10px #06525f double;
+}
+
+.weather-icon, .s_weather-icon {
+    width: 200px;
+    height: 50px;
+}
+
+.weather-icon img, .s_weather-icon img {
+    display: block;
+    margin: 0 auto;
+    width: 60px;
+}
+
+.temperature-value, .s_temperature-value {
+    width: 200px;
+    height: 30px;
+}
+
+.temperature-value p, .s_temperature-value p {
+    padding: 1px;
+    margin: 0;
+    color: #293251;
+    font-size: 2em;
+    text-align: center;
+}
+
+.temperature-value span, .s_temperature-value span {
+    color: #293251;
+    font-size: 0.7em;
+}
+
+.temperature-description p, .s_temperature-description p {
+    padding: 8px;
+    margin: 0 auto;
+    color: #293251;
+    
+    font-size: 1em;
+}
+
+.humidity {
+    
+    
+    color: #293251;
+    
+    font-size: 0.8em;
+}
+.pressure {
+    
+    
+    color: #293251;
+    
+    font-size: 0.8em;
+}
+.visibility {
+    
+    
+    color: #293251;
+    
+    font-size: 0.8em;
+}
+
+.location p, .s_location p {
+    margin: 5px ;
+    padding:0;
+    color: #293251;
+    
+    font-size: 1em;
+}
+
+.weather_container, .s_weather_container {
+    margin: 20px auto;
+}

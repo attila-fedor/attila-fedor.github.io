@@ -4,7 +4,7 @@ html {
 }
 
 .xb-header-div {
-  background-image: url(img/xbsx.gif);
+  background-image: url("/konzolok_2020/img/xbsx.gif");
   background-repeat: no-repeat;
   background-position: center;
   background-position-y: 40px;
@@ -98,7 +98,7 @@ h1 {
 }
 
 .features-div {
-  background-image: url("/img/ps5.gif");
+  background-image: url("/konzolok_2020/img/ps5.gif");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 500px;
