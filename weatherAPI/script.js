@@ -36,8 +36,8 @@ document.querySelector("form").addEventListener("submit", (event) => {
         <p>Párat.: ${adatok.main.humidity} %</p>
 
         </div>
-        <div class="pressure"><p>${weather.pressure} hPa</p></div>
-        <div class="visibility "><p>Lát.táv.: ${weather.visibility} km</p></div>
+        <div class="pressure"><p>${adatok.weather.pressure} hPa</p></div>
+        <div class="visibility "><p>Lát.táv.: ${adatok.weather.visibility} km</p></div>
         <div class="s_location">
           <p>${adatok.name}<p>${adatok.sys.country}</p></p>
         </div>
