@@ -106,12 +106,12 @@ div p {
     width: 60px;
 }
 
-.temperature-value, .s_temperature-value {
+.temperature-value, .temperature-feels {
     width: 200px;
     height: 30px;
 }
 
-.temperature-value p, .s_temperature-value p {
+.temperature-value p, .temperature-feels p {
     padding: 1px;
     margin: 0;
     color: #293251;
@@ -119,7 +119,7 @@ div p {
     text-align: center;
 }
 
-.temperature-value span, .s_temperature-value span {
+.temperature-value span, .temperature-feels span {
     color: #293251;
     font-size: 0.7em;
 }

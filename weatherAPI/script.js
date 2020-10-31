@@ -6,7 +6,7 @@ document.querySelector("form").addEventListener("submit", (event) => {
   const city = document.querySelector("[name=city]").value;
   const API_KEY = "5c03a0c8c6452354d5675b94e2d2dfc9";
 
-  const API = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&lang=hu&appid=${API_KEY}`;
+  const API = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}&units=metric&lang=hu`;
   
   fetch(API)
     .then((result) => result.json())
@@ -26,9 +26,10 @@ document.querySelector("form").addEventListener("submit", (event) => {
             alt="${adatok.weather[0].description}"
           />
         </div>
-        <div class="s_temperature-value">
+        <div class="temperature-value">
           <p>${Math.floor(adatok.main.temp)}°<span>C</span></p>
         </div>
+      
         <div class="s_temperature-description desc">
           <p>${adatok.weather[0].description}</p>
         </div>
@@ -37,7 +38,7 @@ document.querySelector("form").addEventListener("submit", (event) => {
 
         </div>
         <div class="pressure"><p>${adatok.main.pressure} hPa</p></div>
-        <div class="visibility "><p>Lát.táv.: ${adatok.visibility} km</p></div>
+        <div class="visibility"><p>Lát.táv.: ${(adatok.visibility)/1000} km</p></div>
         <div class="s_location">
           <p>${adatok.name}<p>${adatok.sys.country}</p></p>
         </div>
