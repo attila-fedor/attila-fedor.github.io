@@ -20,6 +20,7 @@ img {
   height: auto;
 }
 
+
 a {
   text-decoration: none;
   color: inherit
@@ -45,6 +46,7 @@ h4 {
 
 h5 {
   font-size: 2rem;
+
 }
 
 p {
@@ -364,6 +366,13 @@ header::after {
 
 /*media query*/
 
+@media screen and (max-width: 463px) {
+  h5 {
+    text-align: center;
+  }
+}
+
+
 @media screen and (min-width: 576px) {
   header {
     display: flex;
@@ -372,6 +381,8 @@ header::after {
   header::after {
     content: none;
   }
+
+
 
   .header-navigation {
     display: inline-block;
@@ -402,13 +413,20 @@ header::after {
     grid-template-areas: 'img ...''img name ''img work''img ...''about about';
     background-color: #2c3e50;
   }
+
+
 }
 
 @media screen and (min-width: 768px) {
   .portfolio-list {
     display: grid;
     grid-template-columns: auto auto auto;
+
+
   }
+
+
+
 }
 
 @media screen and (min-width: 992px) {
@@ -427,6 +445,9 @@ header::after {
   .section-contact {
     grid-area: contact;
   }
+
+
+
 
   main {
 
