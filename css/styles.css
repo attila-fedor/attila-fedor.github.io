@@ -25,7 +25,7 @@ a {
   color: inherit
 }
 
-h1{
+h1 {
   font-size: 4rem;
 }
 
@@ -34,20 +34,20 @@ h2 {
   text-align: center;
 }
 
-h3{
-  margin:10px;
+h3 {
+  margin: 10px;
   font-size: 3.2rem;
 }
 
-h4{
+h4 {
   font-size: 3rem;
 }
 
-h5{
+h5 {
   font-size: 2rem;
 }
 
-p{
+p {
   font-size: 1.8rem;
 }
 
@@ -59,17 +59,17 @@ p{
 
 header {
   display: flex;
-  background-color:rgb(18, 138, 114);
+  background-color: rgb(18, 138, 114);
   height: 5.5rem;
   align-items: center;
   font-weight: 600;
-  position:fixed;
-  
+  position: fixed;
+
 }
 
-main{
+main {
   padding-top: 5rem;
-  background-color:#2c3e50;
+  background-color: #2c3e50;
 }
 
 .section-banner {
@@ -81,6 +81,7 @@ main{
 .profile-img {
   grid-area: img;
   width: 150px;
+
   margin: 10px;
   justify-self: self-start;
   border: 2px whitesmoke solid;
@@ -141,11 +142,11 @@ label {
   font-size: 1.5rem;
 }
 
-[type=text], [type=email] ,textarea {
+[type=text], [type=email], textarea {
   width: 25rem;
   padding: 10px;
   border-radius: 5px;
-  
+
   font-size: 1.5rem;
 }
 
@@ -198,71 +199,73 @@ a:hover, a:active {
   height: 4.2rem;
   cursor: pointer;
   border-radius: 100px;
-  border:3px white solid;
+  border: 3px white solid;
   z-index: 100;
 }
 
 .hamburger-lines,
-.hamburger-lines::before, 
+.hamburger-lines::before,
 .hamburger-lines::after {
   display: block;
   position: absolute;
   width: 2.2rem;
   height: 0.2rem;
   border-radius: 50px;
-  
+
   background-color: whitesmoke;
 }
 
-.hamburger-lines::after{
-  content:"";
-  top:1rem;
-  width: 2.2rem;
-  height: 0.2rem;
-  border-radius: 50px;
- 
-
-}
-.hamburger-lines::before{
-  content:"";
-  top:-1rem;
+.hamburger-lines::after {
+  content: "";
+  top: 1rem;
   width: 2.2rem;
   height: 0.2rem;
   border-radius: 50px;
 
+
 }
 
-.menu_box{
+.hamburger-lines::before {
+  content: "";
+  top: -1rem;
+  width: 2.2rem;
+  height: 0.2rem;
+  border-radius: 50px;
+
+}
+
+.menu_box {
   display: block;
   visibility: hidden;
-  
+
   text-align: right;
-  background-color:rgba(18, 138, 114, 0.849);
+  background-color: rgba(18, 138, 114, 0.849);
   position: fixed;
   width: 100%;
   height: 25rem;
   padding: 8rem 2rem;
-  
-  top:0;
-  right:0;
+
+  top: 0;
+  right: 0;
   z-index: 0;
   list-style: none;
- 
- 
-  
-  
+
+
+
+
 }
 
-.hamburger-menu-item{
+.hamburger-menu-item {
   padding: 1rem 0.5rem;
-  
-  
+
+
 }
-#menu_toggle{
+
+#menu_toggle {
   visibility: hidden;
 }
 
-#menu_toggle:checked ~ .menu_box{
+#menu_toggle:checked~.menu_box {
   visibility: visible;
 }
 
@@ -309,6 +312,7 @@ header::after {
   font-style: italic;
   grid-area: about;
 }
+
 .portfolio-item {
   background-image: url("../img/cover.jpg");
   margin: 10px auto;
@@ -327,6 +331,7 @@ header::after {
   width: 20rem;
   height: 15rem;
 }
+
 .konzolok {
   background-image: url("../img/konzol.jpg");
   background-position: center 30%;
@@ -335,6 +340,7 @@ header::after {
   width: 20rem;
   height: 15rem;
 }
+
 .weather {
   background-image: url("../img/weather.png");
   background-position: center 30%;
@@ -348,12 +354,12 @@ header::after {
 .portfolio-list a {
   position: absolute;
   display: block;
- 
+
   width: 20rem;
   height: 15rem;
   cursor: pointer;
   font-size: 2rem;
-  
+
 }
 
 /*media query*/
@@ -362,31 +368,38 @@ header::after {
   header {
     display: flex;
   }
+
   header::after {
     content: none;
   }
+
   .header-navigation {
     display: inline-block;
     flex-grow: 3;
   }
-  .nav_hamburger_menu{
+
+  .nav_hamburger_menu {
     display: none;
   }
+
   .menu-list {
     display: flex;
     justify-content: flex-end;
   }
+
   .menu-item {
     margin: 1rem;
     font-size: 2rem;
   }
+
   .header-logo {
     flex-grow: 2;
   }
+
   .section-banner {
     display: grid;
     grid-template-columns: 0.5fr 5fr;
-    grid-template-areas: 'img ...' 'img name ' 'img work' 'img ...' 'about about';
+    grid-template-areas: 'img ...''img name ''img work''img ...''about about';
     background-color: #2c3e50;
   }
 }
@@ -402,24 +415,30 @@ header::after {
   .section-banner {
     grid-area: banner;
   }
+
   .section-info {
     grid-area: info;
   }
+
   .section-portfolio {
     grid-area: portfolio;
   }
+
   .section-contact {
     grid-area: contact;
   }
+
   main {
-  
+
     display: grid;
-    grid-template-areas: "banner info" "portfolio portfolio" "contact contact";
+    grid-template-areas: "banner info""portfolio portfolio""contact contact";
   }
+
   .portfolio-list {
     display: grid;
     grid-template-columns: auto auto auto;
   }
+
   .portfolio-item {
     background-position: center 20%;
   }
@@ -433,7 +452,7 @@ header::after {
     width: 30rem;
     height: 20rem;
   }
-  
+
   .hotel {
     background-image: url("../img/hotel.jpg");
     background-position: center 30%;
@@ -442,6 +461,7 @@ header::after {
     width: 30rem;
     height: 20rem;
   }
+
   .konzolok {
     background-image: url("../img/konzol.jpg");
     background-position: center 30%;
@@ -450,6 +470,7 @@ header::after {
     width: 30rem;
     height: 20rem;
   }
+
   .weather {
     background-image: url("../img/weather.png");
     background-position: center 30%;
@@ -458,17 +479,17 @@ header::after {
     width: 30rem;
     height: 20rem;
   }
-  
-  
+
+
   .portfolio-list a {
     position: absolute;
     display: block;
-   
+
     width: 30rem;
     height: 20rem;
     cursor: pointer;
     font-size: 2rem;
-    
+
   }
 
 
