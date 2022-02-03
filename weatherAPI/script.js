@@ -21,7 +21,7 @@ document.querySelector("form").addEventListener("submit", (event) => {
       <div class="s_weather-container">
         <div class="s_weather-icon">
           <img
-            src="/weatherAPI/img/${adatok.weather[0].icon}.svg
+            src="../weatherAPI/img/${adatok.weather[0].icon}.svg
         "
             alt="${adatok.weather[0].description}"
           />
